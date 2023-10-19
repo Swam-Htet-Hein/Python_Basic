@@ -13,6 +13,7 @@ print('I can\'t sleep well') # Escape \
 # %s is for string
 # %f is for float
 # %f ရှေ့က .2 သည် ဒဿမနေရာ သတ်မှတ်ခြင်းဖြစ်သည်။
+# %b is for boolean
 print('I have %.2f%s' %(99.55, '$'))
 name = 'Swam Htet Hein'
 age = 21

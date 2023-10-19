@@ -1,5 +1,3 @@
-name = 'swam'
-
-print('HEllo, I am %s.' %name)
-print('Hello, I am {}'.format(name))
-print(f'Hello, I am {name}')
+name = None
+name = input('Enter name : ')
+print(f'Hello, {name}')

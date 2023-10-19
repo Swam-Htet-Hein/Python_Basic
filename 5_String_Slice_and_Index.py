@@ -31,3 +31,4 @@ print(lists[::2]) # take 2 steps all the string
 print(lists[::-1]) # take 1 oppsite step to all string
 reverse = lists[0:6]
 print(reverse[::-1]) # if you want to take a reverse step you've selected use this.
+print(lists[-1:-6:-1]) # when you use minus slice and want to reverse? just take opposite step.
