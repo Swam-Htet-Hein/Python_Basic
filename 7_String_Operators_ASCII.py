@@ -5,7 +5,7 @@ print(ord('c')) # 99 in decimal
 
 print()
 
-# ဒါ့ကြောင့် comparasim operators တွေသုံးတော့မယ်ဆိုရင် ASCII ကအဓိကကျ လာပါပြီ
+# ဒါ့ကြောင့် comparison operators တွေသုံးတော့မယ်ဆိုရင် ASCII ကအဓိကကျ လာပါပြီ
 print('a' > 'b')
 print('b' > 'c')
 print('a' < 'b')
@@ -15,7 +15,7 @@ print()
 
 name = 'Swam'
 address = 'Mandalay Myanmar'
-print(name > address) # comparasim operator သည် ရှေ့ဆုံးကဟာကိုပဲ ယူတဲ့ အတွက် length နဲ့ မဆိုင်ပါ။
+print(name > address) # comparison operator သည် ရှေ့ဆုံးကဟာကိုပဲ ယူတဲ့ အတွက် length နဲ့ မဆိုင်ပါ။
 
 print()
 
