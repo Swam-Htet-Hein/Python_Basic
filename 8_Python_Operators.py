@@ -9,7 +9,7 @@
 # Arithmetic Operators (Addition(+), Substraction(-), Multiplication(*), Division(/,//,%), Exponential(**))
 # Logical Operators (not, and, or)
 # Assignment Operators (=)
-# Bitwise Operators (&&, ||)
+# Bitwise Operators (&, |)
 # Comparicon Operators (<, >, ==, !=, <=, >=)
 
 # Arithmetic Operators
