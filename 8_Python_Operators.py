@@ -10,7 +10,7 @@
 # Logical Operators (not, and, or)
 # Assignment Operators (=)
 # Bitwise Operators (&, |)
-# Comparicon Operators (<, >, ==, !=, <=, >=)
+# Comparison Operators (<, >, ==, !=, <=, >=)
 
 # Arithmetic Operators
 print(2+3)

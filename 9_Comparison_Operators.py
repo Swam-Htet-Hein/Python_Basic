@@ -34,7 +34,7 @@ print(3 != 4) # True
 lit1 = [1,2,3]
 lit2 = [1,2,3]
 print(lit1 == lit2) # "==" checks the items in the box (True)
-print(lit1 is lit1) # "is" checks the identity of the objects (False)
+print(lit1 is lit1) # "is" checks the identity of the objects (True)
 print(lit1 is lit2) 
 print(id(lit1)) # id() method use to find the memory address of an object
 print(id(lit2))

@@ -42,7 +42,27 @@ print(x ^ y)# 0 0 0 1 convert to decimal is 1
 
 # Bitwise NOT
 x = 6
-print(~x) # 0 1 1 0 ==> -(0 1 1 0 + 1) ==> -(0 1 1 1) convert to decimal is -7
+print(~x) # NOT သည် binary number တွေကို ပြောင်းပြန် ပြောင်းလိုက်သည်။
+# 0 1 1 0 ==> 6
+# 1 0 0 1 ==> -7
+"""
+The ~ operator inverts each bit (0 becomes 1 and 1 becomes 0).
+
+Inverted 3 becomes -4:
+ 3 = 0000000000000011
+-4 = 1111111111111100
+
+Decimal numbers and their binary values:
+ 4 = 0000000000000100
+ 3 = 0000000000000011
+ 2 = 0000000000000010
+ 1 = 0000000000000001
+ 0 = 0000000000000000
+-1 = 1111111111111111
+-2 = 1111111111111110
+-3 = 1111111111111101
+-4 = 1111111111111100
+"""
 
 # Bitwise Shifts (left and right)
 # binary(2) <<(left shift)(2)
@@ -61,3 +81,15 @@ print(y >> 2)# 0 0 0 0 1 0 convert to decimal is 0
 
 # left shift သည် binary တွန်းပို့ခံရလျှင် decimal base ပြောင်းလဲမှုရှိသည်။
 # right shift သည် binary ကို ညာဘက်ကနေတွန်းပို့ခံရတဲ့ အတွက်ကြောင့် decimal base ပြောင်းလဲမှုမရှိပါ။
+
+# Right shift
+#           8 4 2 1
+# 0 0 0 --> 1 0 1 0
+#           0 0 0 1 --> 0 1 0
+print(10 >> 3)
+
+# Left shift
+#     32 16 8 4 2 1
+#           1 0 1 0 <-- 0 0
+#      1  0 1 0 0 0   
+print(10 << 2)
