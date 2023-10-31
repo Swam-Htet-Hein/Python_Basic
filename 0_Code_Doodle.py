@@ -1,4 +1,9 @@
-name = ['Swam', 'Htet']
-copy_name = name.copy()
+Eng_Mya = {
+    'food': 'အစားအစာ',
+    'apple': 'ပန်သီး',
+    'shoes' : 'ဖိနပ်'
+}
 
-print(copy_name)
+print(Eng_Mya['food'])
+print(Eng_Mya['shoes'])
+print(Eng_Mya['apple'])
