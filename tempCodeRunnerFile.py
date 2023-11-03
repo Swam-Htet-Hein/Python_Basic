@@ -1,1 +1,1 @@
-_set = {'apple', 'orange', 'banana', 'orange', 'apple'}
+name
