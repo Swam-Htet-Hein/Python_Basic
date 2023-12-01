@@ -1,5 +1,6 @@
-def stdInfo(**kwargs):
-    print(kwargs)
-    print(type(kwargs))
+test = ['book', 'apple']
 
-stdInfo(name = 'Thu', age = 21, city = 'Yangon', _class = 'History')
+def view ():
+    print(test)
+
+view()
