@@ -1,4 +1,0 @@
-    # Register
-    # Remove
-    # Search
-    
