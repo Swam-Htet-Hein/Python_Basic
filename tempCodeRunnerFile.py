@@ -1,1 +1,1 @@
-greet()
+first.status()
