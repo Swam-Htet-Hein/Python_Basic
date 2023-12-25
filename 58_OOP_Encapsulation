@@ -1,0 +1,40 @@
+# Encapsulation 
+# Encapsulation ဆိုတာ ပြင်ပကနေData တွေကိုအလွယ်တကူဝင်ယူလို့မရအောင် encapsulate(ဖုံးအုပ်) လုပ်ထားခြင်းဖြစ်တယ်။
+# Access modifier မှ private လုပ်ထားတာတဲ့တူပါတယ်။
+
+class Game:
+    def __init__(self, name, developer, size, release_date) -> None:
+        self.name = name
+        self.developer = developer
+        # size နဲ့ release_date သည် encapsulated လုပ်ထားသော variable တွေဖြစ်တယ်။
+        # ဒါ့ကြောင့် သူတို့ကို သုံးချင်ရင် getter နဲ့ setter ကိုသုံးရမယ်။
+        self.__size = size
+        self.__release_date = release_date
+    
+    def game_detail(self):
+        print(f"Name:{self.name}|Developer{self.developer}")
+    
+    def get_size(self):
+        return self.__size
+    def get_release_date(self):
+        return self.__release_date
+    
+    # release date ကို ပြောင်းလဲလို့ရတဲ့သူသည် right to change ရှိတဲ့သူမှ ရမယ်။
+    def set_release_date(self, right, date):
+        if right == True:
+            self.__release_date = date
+        else:
+            print("You have no right to do this!")
+
+Game_1 = Game('SuperCat', 'JKR', '1.5GB', 'Jan 1st')
+Game_1.game_detail()
+
+# print(Game_1.get_size())
+# print(Game_1.get_release_date())
+
+# ပြောင်းလဲခွင့်မရှိရင် မရဘူး
+Game_1.set_release_date(False, "Feb 2nd")
+print(Game_1.get_release_date())
+# ပြောင်းလဲခွင့်ရှိရင် ရတယ်။
+Game_1.set_release_date(True, "Feb 2nd")
+print(Game_1.get_release_date())
