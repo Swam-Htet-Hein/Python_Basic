@@ -1,26 +1,38 @@
-class employee:
-    def __init__(self, age) -> None:
-        self.age = age
+class NPC:
+    def __init__(self, name, age, health):
+        self._name = name
+        self._age = age
+        self._health = health
+    def get_damage(self, damage):
+        self._health -= damage
+        print(f"{self._name} get damage!")
+        print(f"{self._health} Left")
 
-    def set_name(self, name):
-        self.name = name
+class Vendor(NPC):
+    def __init__(self, name, age, health, town):
+        super().__init__(name, age, health) 
+        self._town = town
+    
+    def display_info(self):
+        print(f"Name:{self._name}")
+        print(f"Age:{self._age}")
+        print(f"Health:{self._health}")
+        print(f"Town:{self._town}")
 
-    def get_name(self):
-        return self.name
+class Militia(NPC):
+    def __init__(self, name, age, health, town, type):
+        super().__init__(name, age, health) 
+        self._town = town
+        self._type = type
     
-    def __str__(self) -> str:
-        return f"I am {self.name}"
-    
-    def __len__(self):
-        return self.age
-    
-    def __eq__(self, others) -> bool:
-        if self.name == others.name and self.age == others.age:
-            return True
-        else:
-            return False
-emp1 = employee(24)
-emp2 = employee(24)
-emp1.set_name('Moriko')
-emp2.set_name('Moriko')
-print(emp1 == emp2)
+    def display_info(self):
+        print(f"Name:{self._name}")
+        print(f"Age:{self._age}")
+        print(f"Health:{self._health}")
+        print(f"Town:{self._town}")
+        print(f"Type:{self._type}")
+
+obj1 = Vendor('Rosy', 32, 80, 'HoneyWood')
+obj2 = Militia('James', 35, 120, 'HoneyWood', 'TownGuard')
+
+obj2.get_damage(30)
