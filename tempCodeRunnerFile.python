@@ -1,2 +1,0 @@
-print(Game_1.get_size())
-# print(Game_1.get_release_date())
